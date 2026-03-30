@@ -1,4 +1,4 @@
-Build a complete Full Stack Lost and Found Information System (LFIS) web application.
+
 
 Tech Stack Requirements:
 Frontend: HTML5, CSS3, JavaScript (responsive design)
