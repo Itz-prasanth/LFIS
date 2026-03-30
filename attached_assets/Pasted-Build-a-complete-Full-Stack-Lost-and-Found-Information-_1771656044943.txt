@@ -1,0 +1,116 @@
+Build a complete Full Stack Lost and Found Information System (LFIS) web application.
+
+Tech Stack Requirements:
+Frontend: HTML5, CSS3, JavaScript (responsive design)
+Backend: Node.js with Express OR PHP (choose one and implement fully)
+Database: MongoDB (if Node.js) OR MySQL (if PHP)
+Use proper folder structure.
+
+Project Requirements:
+
+1. Home Page:
+- Modern UI design similar to a dashboard landing page
+- Navigation bar with:
+  Home
+  Lost Items
+  Found Items
+  Contact
+  Login
+- Hero welcome section explaining the system
+- System description section
+
+2. System Features Section (cards layout):
+Display feature cards for:
+- User Authentication (Login/Register for users and admin)
+- Report Lost Items (form with item name, description, date, location)
+- Report Found Items (form with finder details and item info)
+- Image Upload Support
+- View & Search Items (search and filter functionality)
+- Admin Dashboard
+- Manage Data (edit/delete/update item status)
+- Contact System (simple messaging or contact form)
+
+3. User Authentication:
+- User registration
+- User login
+- Admin login
+- Password hashing
+- Session management or JWT authentication
+
+4. Report Lost Item Page:
+- Form with:
+  Item name
+  Description
+  Category
+  Date lost
+  Location
+  Image upload
+  Contact info
+- Store data in database
+
+5. Report Found Item Page:
+- Similar to lost item form
+- Save to database
+
+6. View Items Page:
+- Display items in card layout
+- Show image, description, date, location
+- Search bar (search by item name or category)
+- Filter by lost/found
+
+7. Admin Dashboard:
+- View all users
+- View all items
+- Update item status (claimed/unclaimed)
+- Delete records
+- Basic statistics (total lost, total found)
+
+8. Contact Page:
+- Contact form
+- Store messages in database
+
+9. Backend Requirements:
+- REST API routes
+- Proper MVC structure (routes, controllers, models)
+- Error handling
+- Input validation
+
+10. Database Schema:
+Users:
+- id
+- name
+- email
+- password
+- role (user/admin)
+
+Items:
+- id
+- title
+- description
+- category
+- type (lost/found)
+- location
+- date
+- image
+- status (pending/claimed)
+- user_id
+
+Messages:
+- id
+- name
+- email
+- message
+
+11. Extra:
+- Responsive design (mobile friendly)
+- Clean modern UI
+- Proper comments in code
+- Setup instructions
+- How to run the project locally
+
+Generate:
+- Complete folder structure
+- All frontend files
+- Backend files
+- Database schema
+- Installation steps
