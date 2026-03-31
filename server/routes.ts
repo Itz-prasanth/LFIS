@@ -7,15 +7,14 @@ import { setupAuth, registerAuthRoutes, isAuthenticated, isAdmin } from "./repli
 import multer from "multer";
 import path from "path";
 import fs from "fs";
-import { fileURLToPath } from "url";
+
 
 export async function registerRoutes(httpServer: Server, app: Express): Promise<Server> {
   await setupAuth(app);
   registerAuthRoutes(app);
 
   // ── Image Upload ───────────────────────────────────────────────────────────
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  const uploadsDir = path.join(__dirname, "../client/public/uploads");
+  const __dirname = process.cwd();
   if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
 
   const upload = multer({
