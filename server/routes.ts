@@ -15,7 +15,8 @@ export async function registerRoutes(httpServer: Server, app: Express): Promise<
 
   // ── Image Upload ───────────────────────────────────────────────────────────
   const __dirname = process.cwd();
-  if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
+const uploadsDir = path.join(__dirname, "dist", "public", "uploads");
+if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
 
   const upload = multer({
     storage: multer.diskStorage({
